@@ -9,5 +9,5 @@ export const generateSearchUrl = (
     convertedParams.set(param, value);
   }
 
-  return `htps://www.omdbapi.com/?apikey=${apikey}&${convertedParams.toString()}`;
+  return `https://www.omdbapi.com/?apikey=${apikey}&${convertedParams.toString()}`;
 };

@@ -1,5 +1,4 @@
 import { MovieSaveButton } from "@/components/MovieSaveButton";
-import { apikey } from "@/consts";
 import { IMovieEnchase } from "@/models/movie";
 import { generateSearchUrl } from "@/utils/api/generateSearchUrl";
 import axios from "axios";
@@ -48,7 +47,7 @@ const Movie: FC<IMovieEnchase> = (response) => {
         </div>
       </div>
       <article className="self-end md:self-start text-2xl text-center md:text-start">
-        {Plot}
+        Plot: {Plot}
       </article>
     </div>
   );

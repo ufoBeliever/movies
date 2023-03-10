@@ -69,7 +69,10 @@ export const MoviesList = () => {
     }
 
     return movies?.Search ? (
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-10 w-fit mx-auto">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-10 w-fit mx-auto"
+        style={{ minHeight: "616px" }}
+      >
         {movies.Search.map((e) => (
           <Movie {...e} key={e.imdbID} />
         ))}
